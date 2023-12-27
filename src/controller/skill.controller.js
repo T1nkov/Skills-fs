@@ -51,4 +51,15 @@ route.delete('/:id', isValidId, (req, res) => {
     buildResponse(res, 404, error.message);
   }
 });
+
+// route.patch("/:id", isValidId, (req, res) => {
+//   try {
+//     const { id } = req.params;
+//     const dataId = getSkillrById(id);
+//     res.status(200).send(dataId);
+//   } catch (error) {
+//     res.status(404).send(error.message);
+//   }
+// });
+
 module.exports = { route };
